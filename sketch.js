@@ -13,8 +13,10 @@ function setup() {
      fingers = createVideo(['720x480.mp4']);
      fingers.hide();
      song = loadSound('Untertitle.mp3');
-     img = loadImage('sound.jpg');
-      image(img, 700, 10, 70, 50);
+     fill(0);
+   triangle(650, 127, 700, 100, 650, 70);
+   rect(720, 75, 50, 50);
+    
     
     
 }
@@ -42,10 +44,10 @@ function mousePressed() {
   if (song.isPlaying()) {
     // .isPlaying() returns a boolean
     song.stop();
-   image(img, 700, 10);
+   rect(720, 75, 50, 50);
   } else {
     song.play();
-    image(img, 700, 10);
+    triangle(650, 127, 700, 100, 650, 70);
   }
   
 }
