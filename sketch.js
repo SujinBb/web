@@ -9,7 +9,7 @@ var sensativity = 0.005;
 function setup() {
      createCanvas(1400,600);
      imageMode(CENTER);
-     fingers = createVideo(['720x480.mp4']);
+     fingers = createVideo(['1920.mp4']);
      fingers.hide();
      song = loadSound('Untertitle.mp3');
 
