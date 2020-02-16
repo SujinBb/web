@@ -19,7 +19,7 @@ function setup() {
 
 function draw() {
  
-  background(250);
+  background(255);
   translate(width/2,height/2);
   scale(zoom);
   image(fingers,0,0,480,320);
