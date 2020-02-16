@@ -8,10 +8,6 @@ var sensativity = 0.005;
 
 function setup() {
      createCanvas(1400,600);
-        fill(0);
-   triangle(650, 127, 700, 100, 650, 70);
-   rect(720, 75, 50, 50);
-   
      imageMode(CENTER);
      fingers = createVideo(['720x480.mp4']);
      fingers.hide();
@@ -24,9 +20,14 @@ function setup() {
 function draw() {
  
   background(255);
+   fill(255,0,0);
+   stroke(255,0,0)
+   triangle(645, 120, 695, 90, 645, 60);
+   rect(730, 65, 50, 50);
   translate(width/2,height/2);
   scale(zoom);
   image(fingers,0,0,480,320);
+  
   
 
 }
