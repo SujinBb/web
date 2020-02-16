@@ -26,7 +26,7 @@ function draw() {
    rect(730, 65, 50, 50);
   translate(width/2,height/2);
   scale(zoom);
-  image(fingers,0,0,480,320);
+  image(fingers,0,0,320,320);
   fingers.loop(); 
   
   
