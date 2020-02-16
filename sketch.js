@@ -8,14 +8,15 @@ var sensativity = 0.005;
 
 function setup() {
      createCanvas(1400,600);
+        fill(0);
+   triangle(650, 127, 700, 100, 650, 70);
+   rect(720, 75, 50, 50);
+   
      imageMode(CENTER);
      fingers = createVideo(['720x480.mp4']);
      fingers.hide();
      song = loadSound('Untertitle.mp3');
-   fill(0);
-   triangle(650, 127, 700, 100, 650, 70);
-   rect(720, 75, 50, 50);
-    
+
     
     
 }
