@@ -27,6 +27,7 @@ function draw() {
   translate(width/2,height/2);
   scale(zoom);
   image(fingers,0,0,480,320);
+  fingers.loop(); 
   
   
 
@@ -41,7 +42,7 @@ function mouseWheel(event) {
 
 // plays or pauses the video depending on current state
 function mousePressed() {
-  fingers.loop(); // set the video to loop and start playing
+  // set the video to loop and start playing
   if (song.isPlaying()) {
     // .isPlaying() returns a boolean
     song.stop();
