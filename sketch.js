@@ -1,6 +1,5 @@
 var fingers;
 var song;
-var img;
 var zoom = 1.00;
 var zMin = 0.05;
 var zMax = 9.00;
@@ -13,7 +12,7 @@ function setup() {
      fingers = createVideo(['720x480.mp4']);
      fingers.hide();
      song = loadSound('Untertitle.mp3');
-     fill(0);
+   fill(0);
    triangle(650, 127, 700, 100, 650, 70);
    rect(720, 75, 50, 50);
     
