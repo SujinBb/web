@@ -9,13 +9,17 @@ var sensativity = 0.005;
 function setup() {
       createCanvas(1400,600);
      imageMode(CENTER);
-     vid = createVideo(['1920.mp4']);
-     vid.loop();
+    vid = createVideo( ['1920.mp4'],vidLoad);
+  
      song = loadSound('Untertitle.mp3');
      song.loop();
 
  }
 
+function vidLoad(){
+ vid.loop();
+ 
+}
 
 
 function draw() {
@@ -27,9 +31,6 @@ function draw() {
   translate(width/2,height/2);
   scale(zoom);
   image(vid,0,0,100,100);
-
-  
-  
 
 }
 
