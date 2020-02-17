@@ -7,7 +7,7 @@ var sensativity = 0.005;
 
 
 function setup() {
-     createCanvas(1400,600);
+     createCanvas(1000,600);
      imageMode(CENTER);
      vid = createVideo( ['1920.mp4'], vidLoad);
      vid.hide();
@@ -32,8 +32,8 @@ function draw() {
   background(255);
    fill(255,0,0);
    stroke(255,0,0)
-   triangle(645, 120, 695, 90, 645, 60);
-   rect(730, 65, 50, 50);
+   triangle(445, 120, 495, 90, 445, 60);
+   rect(530, 65, 50, 50);
   translate(width/2,height/2);
   scale(zoom);
   image(vid,0,0,100,100);
