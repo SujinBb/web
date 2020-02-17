@@ -7,23 +7,29 @@ var sensativity = 0.005;
 
 
 function setup() {
-      createCanvas(1400,600);
+     createCanvas(1400,600);
      imageMode(CENTER);
-    vid = createVideo( ['1920.mp4'],vidLoad);
-  
-     song = loadSound('Untertitle.mp3');
-     song.loop();
-
- }
+     vid = createVideo( ['1920.mp4'],
+     vidLoad
+  );
+     
+  }
 
 function vidLoad(){
  vid.loop();
  
 }
 
+function preload(){
+ soundFormats('mp3', 'ogg');
+     song = loadSound('Untertitle.mp3');
+   
+}
+
 
 function draw() {
-   background(255);
+ 
+  background(255);
    fill(255,0,0);
    stroke(255,0,0)
    triangle(645, 120, 695, 90, 645, 60);
@@ -31,8 +37,8 @@ function draw() {
   translate(width/2,height/2);
   scale(zoom);
   image(vid,0,0,100,100);
-
-}
+  }
+  
 
 function mouseWheel(event) {
   zoom += sensativity * event.delta;
@@ -43,7 +49,6 @@ function mouseWheel(event) {
 
 // plays or pauses the video depending on current state
 function mousePressed() {
-  // set the video to loop and start playing
   if (song.isPlaying()) {
     // .isPlaying() returns a boolean
     song.stop();
@@ -54,4 +59,3 @@ function mousePressed() {
   }
   
 }
-
