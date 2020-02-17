@@ -9,20 +9,20 @@ var sensativity = 0.005;
 function setup() {
      createCanvas(1400,600);
      imageMode(CENTER);
-     vid = createVideo( ['1920.mp4'],
-     vidLoad
-  );
+     vid = createVideo( ['1920.mp4'], vidLoad);
+     vid.hide();
      
   }
 
 function vidLoad(){
+     
  vid.loop();
  
 }
 
 function preload(){
  soundFormats('mp3', 'ogg');
-     song = loadSound('Untertitle.mp3');
+ song = loadSound('Untertitle.mp3');
    
 }
 
