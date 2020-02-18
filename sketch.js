@@ -10,7 +10,7 @@ var _self;
 function setup() {
   createCanvas(1400,700);
   // specify multiple formats for different browsers
-  // imageMode(CENTER);
+  imageMode(CENTER);
   vid = createVideo(['1920.mp4']);
  vid.hide();
   button = createButton("Sound");
@@ -36,7 +36,7 @@ function draw() {
   background(255);
   translate(width/2,height/2);
   scale(zoom);
-  image(vid,500,300,100,100);
+  image(vid,50,0,100,100);
   }
   
   function mouseWheel(event) {
