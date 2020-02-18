@@ -36,7 +36,7 @@ function draw() {
   background(255);
   translate(width/2,height/2);
   scale(zoom);
-  image(vid,50,0,100,100);
+  image(vid,40,0,100,100);
   }
   
   function mouseWheel(event) {
