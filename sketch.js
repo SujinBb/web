@@ -13,6 +13,14 @@ function setup() {
   imageMode(CENTER);
   vid = createVideo(['1920.mp4']);
  vid.hide();
+  button = createButton("Sound");
+ button.mousePressed(LinkClik);
+ button.position(600,10);
+ button.size(80,40);
+ button.style("background-color","#fff");
+ button.style("color","#f00");
+ button.style('font-size', '20px');
+  
   button = createButton('play');
   button.mousePressed(toggleVid); 
   button.position(500,10);
@@ -20,16 +28,9 @@ function setup() {
  button.style("background-color","#fff");
  button.style("color","#f00");
  button.style('font-size', '20px');
- button = createButton("Sound");
- button.mousePressed(LinkClik);
- button.position(600,10);
- button.size(80,40);
- button.style("background-color","#fff");
- button.style("color","#f00");
- button.style('font-size', '20px');
- 
 
 }
+
 function draw() {
  
   background(255);
@@ -44,6 +45,7 @@ function draw() {
   //uncomment to block page scrolling
   return false;
 }
+
 function LinkClik(){
  window.open("sound.html", _self);
 }
