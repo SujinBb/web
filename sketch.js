@@ -44,6 +44,9 @@ function draw() {
   //uncomment to block page scrolling
   return false;
 }
+function LinkClik(){
+ window.open("sound.html", _self);
+}
 
 // plays or pauses the video depending on current state
 function toggleVid() {
@@ -57,6 +60,4 @@ function toggleVid() {
   playing = !playing;
 }
 
-function LinkClik(){
- window.open("sound.html", _self);
-}
+
