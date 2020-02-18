@@ -3,11 +3,11 @@ var button;
 
 
 function setup() {
-  createCanvas(1000,700);
+  createCanvas(1400,700);
   background(255, 0, 0);
   button = createButton('play');
   button.mousePressed(toggleVid); 
-  button.position(500,10);
+  button.position(700,10);
   button.size(80,40);// attach button listener
  button.style("background-color","#fff");
  button.style("color","#f00");
