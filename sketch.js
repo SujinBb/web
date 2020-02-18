@@ -15,7 +15,7 @@ function setup() {
  vid.hide();
   button = createButton("Sound");
  button.mousePressed(LinkClik);
- button.position(650,10);
+ button.position(600,10);
  button.size(80,40);
  button.style("background-color","#fff");
  button.style("color","#f00");
@@ -23,7 +23,7 @@ function setup() {
   
   button = createButton('play');
   button.mousePressed(toggleVid); 
-  button.position(550,10);
+  button.position(500,10);
   button.size(80,40);// attach button listener
  button.style("background-color","#fff");
  button.style("color","#f00");
@@ -36,7 +36,7 @@ function draw() {
   background(255);
   translate(width/2,height/2);
   scale(zoom);
-  image(vid,30,0,100,100);
+  image(vid,10,0,100,100);
   }
   
   function mouseWheel(event) {
