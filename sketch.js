@@ -8,7 +8,7 @@ var sensativity = 0.005;
 var _self;
 
 function setup() {
-  createCanvas(1200,700);
+  createCanvas(1200,600);
   // specify multiple formats for different browsers
   imageMode(CENTER);
   vid = createVideo(['1920.mp4']);
